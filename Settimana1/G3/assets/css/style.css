@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body { /* Selettore multiplo */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    text-shadow: 4px 4px 8px red, -4px -4px 8px red;
+}
+
+div.contenuto { /* Selettore multiplo */
+    color: red;
+}
+
+/* SELETTORE DI DISCENDENTI */
+#sezione h2 {
+    color: blue;
+}
+
+/* SELETTORE DI FIGLI DIRETTI */
+#sezione2 > h2 {
+    color: blue;
+}
+
+/* SELETTORE DI FRATELLI ADIACENTI */
+#sezione3 h2 + h3 {
+    text-decoration: underline;
+}
+
+#sezione4 li + li {
+    text-decoration: underline;
+    margin-left: 15px;
+}
+
+/* SELETTORE GENERALE DI FRATELLI */
+#sezione5 h2 ~ h3 {
+    text-decoration: underline;
+}
+
+/* PSEUDO-CLASSI: HOVER (LINK) */
+nav li a:link, nav li a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/* PSEUDO-CLASSI: HOVER (GENERICO) */
+#immagine img {
+    width: 10%;
+    border-radius: 100px;
+    filter: grayscale(100%);
+}
+
+#immagine img:hover {
+    width: 25%;
+    border-radius: 0px;
+    filter: grayscale(0%);
+}
+
+/* PSEUDO-CLASSI: FIRST-CHILD / LAST-CHILD */
+#tabella tr:first-child {
+    font-weight: bold;
+}
+
+#tabella tr:last-child {
+    color: blue;
+}
+
+/* PSEUDO-CLASSI: NTH-CHILD */
+#tabella2 {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#tabella2, #tabella2 td {
+    border: 1px solid black;
+}
+
+#tabella2 tr:nth-child(odd) {
+    background-color: lightskyblue;
+}
+
+/* PSEUDO-CLASSI: BEFORE/AFTER (CONTENT) */
+#studenti > li::before {
+    content: 'Studente: ';
+}
+
+#studenti > li::after {
+    content: url('../img/1933646.png');
+}
