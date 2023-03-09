@@ -4,16 +4,16 @@ h1 {
 
 #esterno, #interno {
     border: 2px solid black;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
 }
 
 #esterno {
     background-color: red;
     width: 500px;
     height: 500px;
-    margin: 0 auto;
     position: absolute;
-    top: 50%;
-    left: 50%;
     margin-top: -250px;
     margin-left: -250px;
 }
@@ -22,10 +22,7 @@ h1 {
     background-color: blue;
     width: 200px;
     height: 200px;
-    margin: 0 auto;
     position: relative;
-    top: 50%;
-    left: 50%;
     margin-top: -100px;
     margin-left: -100px;
 }
