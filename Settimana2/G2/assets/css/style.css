@@ -1,0 +1,94 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 5px 15px 5px #BABABA;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+}
+
+header img {
+    width: 30%;
+}
+
+#logo, #titolo, nav ul, main h1, main h2, #informative, #slogan {
+    text-align: center;
+}
+
+#logo, #titolo, nav ul li, #contatti, #informative, #slogan {
+    display: inline-block;
+}
+
+#logo {
+    width: 20%;
+}
+
+#titolo {
+    width: 78%;
+}
+
+#titolo h1 {
+    margin-block-start: 0.3em;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-left: 40px;
+    padding-bottom: 15px;
+}
+
+nav ul li a:link, nav ul li a:visited, #informative a:link, #informative a:visited {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover, #informative a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+section {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 5vw;
+}
+
+#contatti, #slogan {
+    width: 25%
+}
+
+#informative {
+    width: 48%;
+}
+
+#container {
+    position: relative;
+}
+
+#social img {
+    width: 20%;
+}
+
+#social {
+    display: inline-block;
+    position: fixed;
+    top: 70vh;
+    right: 10px;
+    text-align: right;
+}
+
+/* footer {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+} */

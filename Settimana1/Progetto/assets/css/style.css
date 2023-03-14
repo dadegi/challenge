@@ -14,6 +14,12 @@ h1, h2 {
     margin: 0 0 .5em 0;
 }
 
+@media print {
+    header, a.pulsante, .email, div.copyright {
+        display: none !important;
+    }
+}
+
 p {
     margin: 0 0 1.5em 0;
 }
